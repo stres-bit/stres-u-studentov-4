@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="sk"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vplyv stresu na duševné zdravie a imunitu študentov</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"><style>
+.menu-toggle{display:none;font-size:26px;background:none;border:none;color:#fff;cursor:pointer;z-index:1100}
+@media(max-width:900px){
+.menu-toggle{display:block}
+#nav-menu{position:fixed;top:72px;left:0;width:100%;height:calc(100vh - 72px);background:#020617;flex-direction:column;padding:16px 0;display:none;z-index:1000}
+#nav-menu.show{display:flex}
+#nav-menu li{border-bottom:1px solid rgba(255,255,255,.1)}
+#nav-menu li a{display:block;padding:18px 24px;font-size:16px}
+}
+:root{--primary:#2563eb;--secondary:#38bdf8;--dark:#0f172a;--gray:#475569;--light:#f8fafc;--bg:#f1f5f9;--accent:#e0f2fe}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,sans-serif;background:var(--bg);color:var(--dark);line-height:1.7}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+header{position:fixed;width:100%;top:0;left:0;z-index:100;background:rgba(15,23,42,.85);backdrop-filter:blur(6px)}
+.nav{display:flex;justify-content:space-between;align-items:center;height:72px}
+.logo{color:#fff;font-weight:700}
+.nav ul{list-style:none;display:flex;gap:24px}
+.nav ul li a{color:#e5e7eb;font-size:14px}
+</style></head><body><header><div class="container nav"><div class="logo">Duševné zdravie študentov</div><button class="menu-toggle" onclick="toggleMenu()">☰</button><ul id="nav-menu"><li><a href="#uvod" onclick="closeMenu()">Úvod</a></li><li><a href="#stres" onclick="closeMenu()">Stres</a></li><li><a href="#dusevne-zdravie" onclick="closeMenu()">Duševné zdravie</a></li><li><a href="#zivotny-styl" onclick="closeMenu()">Životný štýl</a></li><li><a href="#pohyb" onclick="closeMenu()">Pohyb</a></li><li><a href="#test" onclick="closeMenu()">Test stresu</a></li><li><a href="#pomoc" onclick="closeMenu()">Pomoc</a></li></ul><button class="ai-btn" onclick="toggleAI()">AI Asistent</button></div></header>
+<section class="hero" id="uvod"><div class="container"><div class="hero-content"><h1>Vplyv stresu<br>na duševné zdravie<br>a imunitu študentov</h1><div class="hero-highlight">Dlhodobý stres ovplyvňuje nielen psychickú pohodu, ale aj schopnosť organizmu brániť sa proti chorobám.</div><p>Táto webová stránka sa zameriava na vedecky podložené informácie o tom, ako akademický tlak, nedostatok spánku a psychické preťaženie ovplyvňujú duševné zdravie a imunitný systém študentov.</p><div class="hero-buttons"><a href="#stres" class="btn btn-primary">Preskúmať tému</a><a href="#dusevne-zdravie" class="btn btn-outline">Zistiť viac</a></div></div></div></section>
+<section class="section section-alt" id="stres"><div class="container"><div class="section-header"><h2>Čo je stres a prečo vzniká u študentov</h2><p>Stres je prirodzená reakcia organizmu na záťažové situácie.</p></div><div class="stress-grid"><div class="stress-card"><div class="stress-icon">📚</div><h3>Akademický tlak</h3><p>Neustále skúšky vytvárajú psychické napätie.</p></div><div class="stress-card"><div class="stress-icon">⏰</div><h3>Nedostatok času</h3><p>Kombinácia povinností vedie k únave.</p></div><div class="stress-card"><div class="stress-icon">😴</div><h3>Nedostatok spánku</h3><p>Znižuje odolnosť voči stresu.</p></div><div class="stress-card"><div class="stress-icon">🧠</div><h3>Psychická záťaž</h3><p>Dlhodobé napätie vedie k vyčerpaniu.</p></div></div></div></section>
+<section class="section" id="dusevne-zdravie"><div class="container"><div class="section-header"><h2>Vplyv stresu na duševné zdravie</h2><p>Chronický stres negatívne ovplyvňuje psychickú pohodu.</p></div><div class="mental-grid"><div class="mental-card"><h3>Úzkosť</h3><p>Zvýšená nervozita a obavy.</p></div><div class="mental-card"><h3>Depresia</h3><p>Pokles motivácie a radosti.</p></div><div class="mental-card"><h3>Problémy so sústredením</h3><p>Znížená výkonnosť.</p></div></div></div></section>
+<section class="section section-alt" id="zivotny-styl"><div class="container"><div class="section-header"><h2>Životný štýl ako ochranný faktor</h2><p>Zdravé návyky pomáhajú zvládať stres.</p></div><div class="lifestyle-grid"><div class="lifestyle-card"><h3>Spánok</h3><p>Regeneruje mozog a telo.</p></div><div class="lifestyle-card"><h3>Strava</h3><p>Podporuje imunitu.</p></div><div class="lifestyle-card"><h3>Sociálne vzťahy</h3><p>Znižujú pocit osamelosti.</p></div></div></div></section>
+<section class="section" id="pohyb"><div class="container"><div class="section-header"><h2>Pohyb a fyzická aktivita</h2><p>Pravidelný pohyb je jeden z najúčinnejších spôsobov, ako prirodzene znižovať stres a zlepšovať psychickú pohodu.</p></div><div class="movement-grid"><div class="movement-card"><div class="movement-icon">🚶‍♂️</div><h3>Chôdza</h3><p>30 minút rýchlej chôdze denne pomáha uvoľniť napätie a zlepšiť náladu.</p></div><div class="movement-card"><div class="movement-icon">🧘‍♀️</div><h3>Jóga a strečing</h3><p>Zlepšujú flexibilitu, dýchanie a znižujú úroveň stresových hormónov.</p></div><div class="movement-card"><div class="movement-icon">🏃‍♀️</div><h3>Kardio tréning</h3><p>Beh, bicykel alebo skákanie cez švihadlo podporujú uvoľňovanie endorfínov.</p></div><div class="movement-card"><div class="movement-icon">🏋️‍♂️</div><h3>Silové cvičenia</h3><p>Posilňovanie zvyšuje sebadôveru a fyzickú odolnosť.</p></div></div><div class="exercise-box"><h3>Jednoduchá 10-minútová zostava proti stresu</h3><ul><li>1 minúta hlbokého dýchania</li><li>3 minúty dynamického strečingu</li><li>3 minúty rýchlej chôdze alebo behu na mieste</li><li>2 minúty plank alebo ľahké posilňovanie</li><li>1 minúta uvoľnenia a pomalého dýchania</li></ul></div></div></section>
+<section class="section section-alt" id="test"><div class="container"><div class="section-header"><h2>Rýchly test úrovne stresu</h2><p>Odpovedz úprimne na nasledujúce otázky.</p></div><div class="test-box"><form id="stressTest"><label><input type="checkbox"> Cítim sa často unavený/á</label><label><input type="checkbox"> Mám problémy so spánkom</label><label><input type="checkbox"> Som často nervózny/á alebo podráždený/á</label><label><input type="checkbox"> Ťažko sa sústredím</label><label><input type="checkbox"> Mám pocit časového tlaku</label><button type="button" class="btn btn-primary" onclick="vyhodnotTest()">Vyhodnotiť test</button><p id="testResult"></p></form></div></div></section>
+
+<section class="section" id="pomoc"><div class="container"><div class="section-header"><h2>Kde hľadať pomoc</h2><p>Ak pociťuješ dlhodobý stres, je dôležité vyhľadať podporu.</p></div><div class="help-grid"><div class="help-card"><h3>Školský psychológ</h3><p>Odborná pomoc priamo v škole.</p></div><div class="help-card"><h3>Rodina a priatelia</h3><p>Podpora blízkych ľudí je veľmi dôležitá.</p></div><div class="help-card"><h3>Online poradne</h3><p>Diskrétny spôsob získania pomoci.</p></div></div></div></section>
+<footer><div class="container footer-content"><p>© 2026 Duševné zdravie študentov | Školský projekt</p></div></footer>
+
+<style>
+.container{max-width:1200px;margin:auto;padding:0 20px}
+.section{padding:100px 0}
+.section-alt{background:#e0f2fe}
+.section-header{text-align:center;margin-bottom:48px}
+.section-header h2{font-size:32px;margin-bottom:10px}
+.hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(120deg,#0f172a,#1e3a8a);color:#fff;padding-top:72px}
+.hero-content{max-width:600px}
+.hero h1{font-size:44px;line-height:1.2}
+.hero-highlight{background:rgba(255,255,255,.1);padding:12px;border-left:4px solid #38bdf8;margin:20px 0}
+.btn{padding:12px 22px;border-radius:8px;text-decoration:none;display:inline-block}
+.btn-primary{background:#2563eb;color:#fff}
+.btn-outline{border:2px solid #38bdf8;color:#38bdf8}
+.stress-grid,.mental-grid,.lifestyle-grid,.movement-grid,.help-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.stress-card,.mental-card,.lifestyle-card,.movement-card,.help-card,.test-box{background:#fff;padding:22px;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,.08)}
+.exercise-box{margin-top:30px;background:#fff;padding:22px;border-radius:12px}
+footer{background:#020617;color:#fff;padding:30px 0;text-align:center}
+.ai-btn{background:#38bdf8;border:none;color:#000;padding:10px 18px;border-radius:8px;cursor:pointer}
+</style>
+
+<script>
+function toggleMenu(){
+document.getElementById("nav-menu").classList.toggle("show");
+}
+
+function closeMenu(){
+document.getElementById("nav-menu").classList.remove("show");
+}
+
+function vyhodnotTest(){
+const checkboxes=document.querySelectorAll("#stressTest input[type='checkbox']");
+let score=0;
+checkboxes.forEach(cb=>{if(cb.checked)score++;});
+let result="";
+if(score<=1) result="Nízka úroveň stresu 👍";
+else if(score<=3) result="Stredná úroveň stresu ⚠️ Skús viac oddychu.";
+else result="Vysoká úroveň stresu ❗ Odporúčame vyhľadať podporu.";
+document.getElementById("testResult").innerText=result;
+}
+
+function toggleAI(){
+alert("AI asistent je demonštračná funkcia 🙂");
+}
+</script>
+
+</body></html>
